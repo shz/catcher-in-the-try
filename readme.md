@@ -40,5 +40,7 @@ Pretty easy!
 
 ## License
 
-Public domain, see (license.txt)[license.txt] for details.
+Public domain, see [license.txt](license.txt) for details.
 
+Developed and open sourced at [Vizify](https://www.vizify.com), from
+Portland with love.
