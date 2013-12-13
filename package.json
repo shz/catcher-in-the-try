@@ -1,0 +1,22 @@
+{
+  "name": "catcher-in-the-try",
+  "version": "1.0.0",
+  "description": "Catch Javascript errors in the browser.  All of them.  With real stack traces!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shz/catcher-in-the-try.git"
+  },
+  "keywords": [
+    "exception",
+    "browser"
+  ],
+  "author": "Patrick Stein",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/shz/catcher-in-the-try/issues"
+  }
+}
