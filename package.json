@@ -2,9 +2,9 @@
   "name": "catcher-in-the-try",
   "version": "1.0.0",
   "description": "Catch Javascript errors in the browser.  All of them.  With real stack traces!",
-  "main": "index.js",
+  "main": "lib/citt.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "license": "Public Domain",
   "bugs": {
     "url": "https://github.com/shz/catcher-in-the-try/issues"
+  },
+  "dependencies": {
+    "acorn": "~0.4.2",
+    "estraverse": "~1.5.0",
+    "escodegen": "~1.0.1"
   }
 }
