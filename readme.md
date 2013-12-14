@@ -1,15 +1,14 @@
 # Catcher in the try
 
-Using `window.onerror` is a rather poor solution for catching client side errors,
-because it doesn't give very useful error messages (for example, there's no stack trace).
-
-Catcher in the try solves this problem by maniulating JS source code to properly
-track the full exception object all the way up to your custom error handler.
+Ever used `window.onerror`?  It sucks.  You don't get stack traces, or
+anything resembling a real `Error` object. Catcher in the try solves
+this problem by maniulating JS source code to properly track the
+full exception object all the way up to your custom error handler.
 
 **Example:**
 ```javascript
 window.addEventListener('citt', function(e) {
-  console.log('Oh noes!');
+  console.log('Look maw, full error objects!');
   console.log(e.error.stack);
 }, false);
 ```
@@ -18,7 +17,8 @@ window.addEventListener('citt', function(e) {
 
 ## Usage
 
-You need to wire up both the client and backend to make things work.
+There's both a client side piece, and a backend piece that need to be
+wired up for everything to work correctly.
 
 ### Client Side
 
@@ -26,7 +26,7 @@ Listen for the `citt` event on the `window`, as in the above example.
 
 ### Backend
 
-There are a couple different ways to wire things up.
+There are a couple different ways to hook things up:
 
 ```javascript
 var citt = require('catcher-in-the-try');
@@ -75,7 +75,14 @@ An `error` handler is attached to the window that simply
 looks for this `_citt` variable, and passes it
 on to the custom error handler.
 
-Pretty easy!
+Pretty easy!  If you want to see this better for yourself, run this
+from node:
+
+```javascript
+var citt = require('catcher-in-the-try');
+var src = citt.wrapSrc('setTimeout(function() { throw new Error() }, 100)');
+console.log(src);
+```
 
 ## License
 
