@@ -1,0 +1,40 @@
+{
+  "name": "catcher-in-the-try",
+  "version": "1.0.0",
+  "dependencies": {
+    "acorn": {
+      "version": "0.4.2",
+      "from": "acorn@",
+      "resolved": "https://registry.npmjs.org/acorn/-/acorn-0.4.2.tgz"
+    },
+    "estraverse": {
+      "version": "1.5.0",
+      "from": "estraverse@",
+      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-1.5.0.tgz"
+    },
+    "escodegen": {
+      "version": "1.0.1",
+      "from": "escodegen@~1.0.1",
+      "dependencies": {
+        "esprima": {
+          "version": "1.0.4",
+          "from": "esprima@~1.0.4"
+        },
+        "esutils": {
+          "version": "1.0.0",
+          "from": "esutils@~1.0.0"
+        },
+        "source-map": {
+          "version": "0.1.31",
+          "from": "source-map@~0.1.30",
+          "dependencies": {
+            "amdefine": {
+              "version": "0.1.0",
+              "from": "amdefine@>=0.0.4"
+            }
+          }
+        }
+      }
+    }
+  }
+}
