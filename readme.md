@@ -22,7 +22,9 @@ wired up for everything to work correctly.
 
 ### Client Side
 
-Listen for the `citt` event on the `window`, as in the above example.
+Listen for the `citt` event on the `window`, as in the above example.  There
+are no libraries to include; CITT will inject its required code automatically
+when you call the wrap functions.
 
 ### Backend
 
