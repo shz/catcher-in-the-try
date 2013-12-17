@@ -9,7 +9,7 @@ full exception object all the way up to your custom error handler.
 ```javascript
 window.addEventListener('citt', function(e) {
   console.log('Look maw, full error objects!');
-  console.log(e.error.stack);
+  console.log(e.detail.stack);
 }, false);
 ```
 
