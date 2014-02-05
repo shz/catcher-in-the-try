@@ -1,6 +1,6 @@
 {
   "name": "catcher-in-the-try",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Catch Javascript errors in the browser.  All of them.  With real stack traces!",
   "main": "lib/citt.js",
   "scripts": {

@@ -59,7 +59,7 @@ will save you more space).
 ### Browser Support
 
 Works in modern browsers, should work in all older IEs as well, though I
-haven't really tested them thoroughly...
+haven't really tested them thoroughly.
 
 ## Installation
 
