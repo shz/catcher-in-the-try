@@ -5,75 +5,96 @@ var ast = {
     "type": "Program",
     "body": [
         {
-            "type": "VariableDeclaration",
-            "declarations": [
-                {
-                    "type": "VariableDeclarator",
-                    "id": {
-                        "type": "Identifier",
-                        "name": "st"
-                    },
-                    "init": {
-                        "type": "Identifier",
-                        "name": "setTimeout"
-                    }
-                }
-            ],
-            "kind": "var"
-        },
-        {
-            "type": "FunctionDeclaration",
-            "id": {
-                "type": "Identifier",
-                "name": "fail"
-            },
-            "params": [],
-            "defaults": [],
-            "body": {
-                "type": "BlockStatement",
-                "body": [
-                    {
-                        "type": "ThrowStatement",
-                        "argument": {
-                            "type": "NewExpression",
-                            "callee": {
-                                "type": "Identifier",
-                                "name": "Error"
-                            },
-                            "arguments": [
-                                {
-                                    "type": "Literal",
-                                    "value": "uh oh",
-                                    "raw": "'uh oh'"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "rest": null,
-            "generator": false,
-            "expression": false
-        },
-        {
             "type": "ExpressionStatement",
             "expression": {
                 "type": "CallExpression",
                 "callee": {
-                    "type": "Identifier",
-                    "name": "st"
-                },
-                "arguments": [
-                    {
-                        "type": "Identifier",
-                        "name": "fail"
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [],
+                    "defaults": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "st"
+                                        },
+                                        "init": {
+                                            "type": "Identifier",
+                                            "name": "setTimeout"
+                                        }
+                                    }
+                                ],
+                                "kind": "var"
+                            },
+                            {
+                                "type": "FunctionDeclaration",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "fail"
+                                },
+                                "params": [],
+                                "defaults": [],
+                                "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ThrowStatement",
+                                            "argument": {
+                                                "type": "NewExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "Error"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "uh oh",
+                                                        "raw": "'uh oh'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "rest": null,
+                                "generator": false,
+                                "expression": false
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "st"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "fail"
+                                        },
+                                        {
+                                            "type": "Literal",
+                                            "value": 200,
+                                            "raw": "200"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     },
-                    {
-                        "type": "Literal",
-                        "value": 200,
-                        "raw": "200"
-                    }
-                ]
+                    "rest": null,
+                    "generator": false,
+                    "expression": false
+                },
+                "arguments": []
             }
         }
     ]
